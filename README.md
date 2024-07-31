@@ -29,17 +29,47 @@
  *  Instantiate the deep learning model: A lightweight model, such as a simple neural network with an input layer, a hidden layer containing 64 neurons, and an output layer with a sigmoid activation function for binary classification, uses a dropout rate of 0.5 to help prevent overfitting. The model is optimized using the Adam optimizer with a learning rate of 0.001.
  *  Train the model using 10 epoch, batch size of 32 and validation split of 0.2
  *  Visualize the history to see the training and validation accuracy and loss.
+    [Accuracy](images/accuracy_output.png)
 
+    [Loss](images/loss_output.png)
  6. Evaluation
+ 
+ *  Evaluation on the test dataset the accuracy
+ *  Generate predictions, print and visualise classification report
+    [Classification report](images/classification_report.png)
+ 
+ *  Visualize the confusion_matrix
+    [confusion_matrix](images/confusionmatrix_output.png)
 
- What is a Vectorizer?
-  * Text to Numerical Conversion: A vectorizer converts text data into numerical vectors that machine learning algorithms can process. In NLP, algorithms typically work with numerical data, so we need to transform textual information into a format that the algorithms can understand.
-  * Feature Extraction: Vectorizers extract features from text by representing words or phrases as numerical values. These features capture important information about the text, such as word frequency, relevance, and context.
-  * Dimensionality Reduction: They can help reduce the dimensionality of the text data by creating sparse matrices where each row represents a document or text sample, and each column represents a unique word or term in the corpus.
+
+## Key terms and definitions
+ 
+ ### What is a Vectorizer?
+
+A vectorizer is a tool in natural language processing (NLP) that converts text into numbers that machines can understand. It does this by:
+
+i.   Transforming words into numerical values
+ii.  Extracting important features from text
+iii. Creating efficient representations of text data
 
 Why Use Vectorizers?
-1.  Input Format for Machine Learning Models: Machine learning models, especially those used for text classification or sentiment analysis, require numerical input. Vectorizers enable us to convert raw text data into a format that these models can process and learn from.
-2.  Feature Representation: Vectorizers capture semantic information from text, such as word importance and relationships between words. This allows machine learning models to learn patterns and make predictions based on the features extracted from the text.
-3.  Efficient Data Representation: They provide an efficient and compact representation of text data, especially in high-dimensional spaces where the number of unique words or features can be large. This efficiency is crucial for training and deploying machine learning models effectively.
-4.  Normalization and Scaling: Vectorizers often perform normalization and scaling of the numerical values, which can improve the performance and stability of machine learning algorithms, especially when dealing with diverse text data.
-5.  Handling Sparse Data: Text data is often sparse, meaning that most words or features in a document are zero or absent. Vectorizers handle sparse data efficiently, storing only non-zero values and saving memory and computational resources.# Toxic-Comment-Classification
+
+a. To prepare text for machine learning models
+b. To capture word importance and relationships
+c. To efficiently represent large amounts of text
+d. To normalize and scale text data
+e. To handle sparse data (text with many unique words)
+
+Vectorizers allow machines to process and learn from text, enabling tasks like text classification and sentiment analysis.
+
+### SMOTE: Synthetic Minority Over-sampling Technique
+
+SMOTE is a method used in machine learning to address imbalanced datasets. It works by:
+
+1. Identifying the minority class (the class with fewer samples)
+2. Creating new, synthetic samples of the minority class
+3. Adding these synthetic samples to the dataset
+
+This process helps balance the dataset, improving the model's ability to learn from and predict the minority class. SMOTE creates new samples by interpolating between existing minority class samples, maintaining the original data distribution.
+
+By using SMOTE, machine learning models can better handle imbalanced data, leading to more accurate predictions across all classes.
