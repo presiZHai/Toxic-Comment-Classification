@@ -1,4 +1,7 @@
-## Toxic Comments Detection
+## Toxic Comments Detection:
+Toxic Comments Detection: An NLP-based system that identifies and classifies harmful or offensive language in online discussions, helping to promote healthier digital communication.
+
+![Toxic Comments Detection](images/toxic_comment_classification.png)
 
 1. Import Libraries
 * NumPy for numerical computations
