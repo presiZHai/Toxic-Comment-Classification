@@ -29,17 +29,18 @@
  *  Instantiate the deep learning model: A lightweight model, such as a simple neural network with an input layer, a hidden layer containing 64 neurons, and an output layer with a sigmoid activation function for binary classification, uses a dropout rate of 0.5 to help prevent overfitting. The model is optimized using the Adam optimizer with a learning rate of 0.001.
  *  Train the model using 10 epoch, batch size of 32 and validation split of 0.2
  *  Visualize the history to see the training and validation accuracy and loss.
-    [Accuracy](images/accuracy_output.png)
+    ![Accuracy](images/accuracy_output.png)
 
-    [Loss](images/loss_output.png)
+    ![Loss](images/loss_output.png)
+
  6. Evaluation
  
  *  Evaluation on the test dataset the accuracy
  *  Generate predictions, print and visualise classification report
-    [Classification report](images/classification_report.png)
+    ![Classification report](images/classification_report.png)
  
  *  Visualize the confusion_matrix
-    [confusion_matrix](images/confusionmatrix_output.png)
+    ![Confusion Matrix](images/confusionmatrix_output.png)
 
 
 ## Key terms and definitions
