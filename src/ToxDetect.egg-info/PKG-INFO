@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: ToxDetect
+Version: 0.1.0
+Summary: A small python package for ml app
+Home-page: https://github.com/presiZHai/Toxic-Comment-Classification
+Author: presiZHai
+Author-email: abiodungndj@gmail.com
+Project-URL: Bug Tracker, https://github.com/presiZHai/Toxic-Comment-Classification/issues

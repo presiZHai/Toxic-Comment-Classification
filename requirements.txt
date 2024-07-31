@@ -1,9 +1,20 @@
-wordcloud
-matplotlib
 pandas
-seaborn
-tensorflow
 numpy
+matplotlib
 scikit-learn
 imblearn
-streamlit
+seaborn
+tensorflow
+wordcloud
+types-PyYAML
+Flask
+Flask-Cors
+dagshub
+tqdm
+python-box==6.0.2
+mlflow
+pyYAML
+ensure==1.0.2
+notebook
+
+-e .
